@@ -6,8 +6,7 @@ public class Bullet : MonoBehaviour
 
 	private void OnCollisionEnter (Collision collision)
 	{
-		if (collision.gameObject.CompareTag ("Player"))
-			;//TODO: Apply Damage
+		if (collision.gameObject.CompareTag ("Player"));//TODO: Apply Damage
 		Destroy (gameObject);
 	}
 }
